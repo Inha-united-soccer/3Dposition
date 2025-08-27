@@ -1,0 +1,181 @@
+[0.085s] Invoking command in '/home/a/soccer_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_lite/ecl_config -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_config
+[0.215s] -- The C compiler identification is GNU 11.4.0
+[0.317s] -- The CXX compiler identification is GNU 11.4.0
+[0.330s] -- Detecting C compiler ABI info
+[0.489s] -- Detecting C compiler ABI info - done
+[0.503s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.503s] -- Detecting C compile features
+[0.504s] -- Detecting C compile features - done
+[0.509s] -- Detecting CXX compiler ABI info
+[0.674s] -- Detecting CXX compiler ABI info - done
+[0.685s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.686s] -- Detecting CXX compile features
+[0.686s] -- Detecting CXX compile features - done
+[0.694s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.004s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.309s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.331s] -- Looking for _POSIX_VERSION
+[1.523s] -- Looking for _POSIX_VERSION - found
+[1.524s] -- Looking for realpath in rt
+[1.715s] -- Looking for realpath in rt - found
+[1.716s] -- Looking for clock_nanosleep in rt
+[1.863s] -- Looking for clock_nanosleep in rt - found
+[1.863s] -- Looking for clock_gettime in rt
+[1.988s] -- Looking for clock_gettime in rt - found
+[1.989s] -- Looking for pthread_mutex_timedlock in pthread
+[2.113s] -- Looking for pthread_mutex_timedlock in pthread - found
+[2.113s] -- Looking for nanosleep in pthread
+[2.240s] -- Looking for nanosleep in pthread - found
+[2.240s] -- Looking for shm_open in rt
+[2.370s] -- Looking for shm_open in rt - found
+[2.370s] -- Looking for sched_setscheduler in pthread
+[2.491s] -- Looking for sched_setscheduler in pthread - found
+[2.491s] -- Looking for sem_timedwait in pthread
+[2.613s] -- Looking for sem_timedwait in pthread - found
+[2.614s] -- Looking for sem_init in pthread
+[2.750s] -- Looking for sem_init in pthread - found
+[2.750s] -- Looking for CLOCK_MONOTONIC
+[2.887s] -- Looking for CLOCK_MONOTONIC - found
+[2.887s] -- Looking for CLOCK_PROCESS_CPUTIME_ID
+[3.013s] -- Looking for CLOCK_PROCESS_CPUTIME_ID - found
+[3.016s] -- Looking for pthread.h
+[3.146s] -- Looking for pthread.h - found
+[3.147s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.290s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.292s] -- Found Threads: TRUE  
+[3.294s] -- Looking for sys/types.h
+[3.437s] -- Looking for sys/types.h - found
+[3.438s] -- Looking for stdint.h
+[3.580s] -- Looking for stdint.h - found
+[3.580s] -- Looking for stddef.h
+[3.723s] -- Looking for stddef.h - found
+[3.723s] -- Check size of char
+[3.859s] -- Check size of char - done
+[3.860s] -- Check size of short
+[3.997s] -- Check size of short - done
+[3.997s] -- Check size of int
+[4.144s] -- Check size of int - done
+[4.145s] -- Check size of long
+[4.303s] -- Check size of long - done
+[4.304s] -- Check size of long long
+[4.430s] -- Check size of long long - done
+[4.431s] -- Check size of float
+[4.554s] -- Check size of float - done
+[4.555s] -- Check size of double
+[4.742s] -- Check size of double - done
+[4.743s] -- Check size of long double
+[4.870s] -- Check size of long double - done
+[4.878s] -- -------------------------------------------------------------------
+[4.878s] -- Platform Summary
+[4.879s] -- -------------------------------------------------------------------
+[4.879s] -- 
+[4.879s] -- System type.....................posix
+[4.879s] -- Operating System................Linux-6.8.0-65-generic
+[4.879s] -- Timer model.....................real-time
+[4.879s] -- Thread model....................posix
+[4.879s] -- Size of char....................1
+[4.880s] -- Size of short...................2
+[4.880s] -- Size of int.....................4
+[4.880s] -- Size of long....................8
+[4.880s] -- Size of long long...............8
+[4.880s] -- Size of float...................4
+[4.880s] -- Size of double..................8
+[4.880s] -- Size of long double.............16
+[4.880s] -- Size of pointer.................64-bit
+[4.881s] -- Endianness......................little-endian
+[4.881s] -- 
+[4.881s] -- -------------------------------------------------------------------
+[4.881s] -- Posix Specifications
+[4.881s] -- -------------------------------------------------------------------
+[4.881s] -- 
+[4.881s] -- Clock selection.................yes
+[4.881s] -- Monotonic clock.................yes
+[4.881s] -- Priority scheduling.............yes
+[4.882s] -- Semaphores......................yes
+[4.882s] -- Shared memory objects...........yes
+[4.882s] -- Timers..........................yes
+[4.882s] -- Timeouts........................yes
+[4.882s] --  - clock_gettime................yes
+[4.882s] --  - clock_nanosleep..............yes
+[4.882s] --  - nanosleep....................yes
+[4.882s] --  - pthread_mutex_timedlock......yes
+[4.883s] --  - sched_setscheduler...........yes
+[4.883s] --  - sem_init.....................yes
+[4.883s] --  - sem_timedwait................yes
+[4.883s] --  - shm_open.....................yes
+[4.883s] -- 
+[4.883s] -- -------------------------------------------------------------------
+[4.883s] -- Build Environment
+[4.883s] -- -------------------------------------------------------------------
+[4.884s] -- 
+[4.884s] -- Compiler......................../usr/bin/c++
+[4.884s] --  - version......................c++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+[4.884s] Copyright (C) 2021 Free Software Foundation, Inc.
+[4.884s] This is free software see the source for copying conditions.  There is NO
+[4.884s] warranty not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[4.884s] 
+[4.885s] 
+[4.885s] -- 
+[4.895s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.135s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.281s] -- Configuring done
+[5.302s] -- Generating done
+[5.310s] -- Build files have been written to: /home/a/soccer_ws/build/ecl_config
+[5.317s] Invoked command in '/home/a/soccer_ws/build/ecl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_lite/ecl_config -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_config
+[5.320s] Invoking command in '/home/a/soccer_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_config -- -j16 -l16
+[5.422s] [  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.423s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[5.431s] [ 18%] [32mBuilding CXX object src/utilities/CMakeFiles/ecl_detect_endian.dir/detect_endian.cpp.o[0m
+[5.436s] [ 25%] [32mBuilding CXX object src/utilities/CMakeFiles/ecl_detect_posix.dir/detect_posix.cpp.o[0m
+[5.962s] [ 31%] [32m[1mLinking CXX executable bin/ecl_detect_endian[0m
+[5.992s] [ 37%] [32m[1mLinking CXX executable bin/ecl_detect_posix[0m
+[6.231s] [ 37%] Built target ecl_detect_posix
+[6.238s] [ 37%] Built target ecl_detect_endian
+[6.844s] [ 43%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[6.956s] [ 43%] Built target gtest_main
+[11.771s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[11.901s] [ 50%] Built target gtest
+[11.968s] [ 56%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_endianness.dir/endianness.cpp.o[0m
+[11.968s] [ 62%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_portable_types.dir/portable_types.cpp.o[0m
+[11.968s] [ 68%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_char_sign.dir/char_sign.cpp.o[0m
+[11.968s] [ 75%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_macros.dir/macros.cpp.o[0m
+[13.383s] [ 87%] [32m[1mLinking CXX executable ecl_test_macros[0m
+[13.383s] [ 87%] [32m[1mLinking CXX executable ecl_test_portable_types[0m
+[13.385s] [ 93%] [32m[1mLinking CXX executable ecl_test_endianness[0m
+[13.425s] [100%] [32m[1mLinking CXX executable ecl_test_char_sign[0m
+[13.707s] [100%] Built target ecl_test_endianness
+[13.710s] [100%] Built target ecl_test_macros
+[13.719s] [100%] Built target ecl_test_portable_types
+[13.726s] [100%] Built target ecl_test_char_sign
+[13.769s] Invoked command in '/home/a/soccer_ws/build/ecl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_config -- -j16 -l16
+[13.770s] Invoking command in '/home/a/soccer_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_config
+[13.790s] -- Install configuration: ""
+[13.790s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ament_index/resource_index/package_run_dependencies/ecl_config
+[13.791s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ament_index/resource_index/parent_prefix_path/ecl_config
+[13.791s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/environment/ament_prefix_path.sh
+[13.791s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/environment/ament_prefix_path.dsv
+[13.792s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/environment/path.sh
+[13.792s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/environment/path.dsv
+[13.793s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/local_setup.bash
+[13.794s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/local_setup.sh
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/local_setup.zsh
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/local_setup.dsv
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/package.dsv
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ament_index/resource_index/packages/ecl_config
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/cmake/ecl_configExport.cmake
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/cmake/ament_cmake_export_targets-extras.cmake
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.795s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/cmake/ecl_configConfig.cmake
+[13.796s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/cmake/ecl_configConfig-version.cmake
+[13.796s] -- Installing: /home/a/soccer_ws/install/ecl_config/share/ecl_config/package.xml
+[13.796s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config.hpp
+[13.798s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/ecl.hpp
+[13.798s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/char_sign.hpp
+[13.798s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/ecl_unknown.hpp
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/endianness.hpp
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/macros.hpp
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/portable_types.hpp
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/include/ecl/config/windows.hpp
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/bin/ecl_detect_endian
+[13.799s] -- Installing: /home/a/soccer_ws/install/ecl_config/bin/ecl_detect_posix
+[13.804s] Invoked command in '/home/a/soccer_ws/build/ecl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_config

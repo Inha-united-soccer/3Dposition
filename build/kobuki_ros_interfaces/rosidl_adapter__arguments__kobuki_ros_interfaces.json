@@ -1,0 +1,24 @@
+{
+  "package_name": "kobuki_ros_interfaces",
+  "non_idl_tuples": [
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/BumperEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/CliffEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/DigitalOutput.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/ExternalPower.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/Led.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/PowerSystemEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/SensorState.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/VersionInfo.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/ControllerInfo.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/ButtonEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/DigitalInputEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/DockInfraRed.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/KeyboardInput.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/MotorPower.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/RobotStateEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/Sound.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/ScanAngle.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:msg/WheelDropEvent.msg",
+    "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros_interfaces:action/AutoDocking.action"
+  ]
+}

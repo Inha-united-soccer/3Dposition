@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-51796000c7b14f3c1981.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kobuki_bumper2pc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc-8fd9e1501db0460ad720.json",
+					"name" : "kobuki_bumper2pc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc_node-0082149c0fd5d1951b77.json",
+					"name" : "kobuki_bumper2pc_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc_uninstall-611e9cc4a74825d6e3fe.json",
+					"name" : "kobuki_bumper2pc_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d63a75cb2a7ae542aeeb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/a/soccer_ws/build/kobuki_bumper2pc",
+		"source" : "/home/a/soccer_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_bumper2pc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

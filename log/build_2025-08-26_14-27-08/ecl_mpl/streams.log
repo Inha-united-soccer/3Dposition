@@ -1,0 +1,65 @@
+[0.079s] Invoking command in '/home/a/soccer_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_mpl
+[0.199s] -- The C compiler identification is GNU 11.4.0
+[0.319s] -- The CXX compiler identification is GNU 11.4.0
+[0.333s] -- Detecting C compiler ABI info
+[0.475s] -- Detecting C compiler ABI info - done
+[0.496s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.496s] -- Detecting C compile features
+[0.497s] -- Detecting C compile features - done
+[0.504s] -- Detecting CXX compiler ABI info
+[0.669s] -- Detecting CXX compiler ABI info - done
+[0.681s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.681s] -- Detecting CXX compile features
+[0.682s] -- Detecting CXX compile features - done
+[0.690s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.003s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.326s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.354s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.661s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.669s] -- Looking for pthread.h
+[1.827s] -- Looking for pthread.h - found
+[1.827s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.962s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.964s] -- Found Threads: TRUE  
+[2.115s] -- Configuring done
+[2.132s] -- Generating done
+[2.139s] -- Build files have been written to: /home/a/soccer_ws/build/ecl_mpl
+[2.146s] Invoked command in '/home/a/soccer_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_mpl
+[2.149s] Invoking command in '/home/a/soccer_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_mpl -- -j16 -l16
+[2.237s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.237s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.136s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.204s] [ 50%] Built target gtest_main
+[7.777s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[8.069s] [ 66%] Built target gtest
+[8.139s] [ 83%] [32mBuilding CXX object src/test/CMakeFiles/test_enable_if.dir/enable_if.cpp.o[0m
+[10.179s] [100%] [32m[1mLinking CXX executable test_enable_if[0m
+[10.708s] [100%] Built target test_enable_if
+[10.772s] Invoked command in '/home/a/soccer_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_mpl -- -j16 -l16
+[10.773s] Invoking command in '/home/a/soccer_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_mpl
+[10.816s] -- Install configuration: ""
+[10.816s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ament_index/resource_index/package_run_dependencies/ecl_mpl
+[10.816s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ament_index/resource_index/parent_prefix_path/ecl_mpl
+[10.818s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/environment/ament_prefix_path.sh
+[10.818s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/environment/ament_prefix_path.dsv
+[10.818s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/environment/path.sh
+[10.819s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/environment/path.dsv
+[10.819s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/local_setup.bash
+[10.819s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/local_setup.sh
+[10.819s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/local_setup.zsh
+[10.820s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/local_setup.dsv
+[10.820s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/package.dsv
+[10.820s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ament_index/resource_index/packages/ecl_mpl
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplExport.cmake
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/cmake/ament_cmake_export_targets-extras.cmake
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplConfig.cmake
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplConfig-version.cmake
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/share/ecl_mpl/package.xml
+[10.827s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl.hpp
+[10.828s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl/bool.hpp
+[10.828s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl/converters.hpp
+[10.828s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl/enable_if.hpp
+[10.828s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl/failed_object.hpp
+[10.828s] -- Installing: /home/a/soccer_ws/install/ecl_mpl/include/ecl/mpl/if.hpp
+[10.836s] Invoked command in '/home/a/soccer_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_mpl

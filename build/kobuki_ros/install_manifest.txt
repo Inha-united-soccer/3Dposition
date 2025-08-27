@@ -1,0 +1,15 @@
+/home/a/soccer_ws/install/kobuki_ros/share/ament_index/resource_index/package_run_dependencies/kobuki_ros
+/home/a/soccer_ws/install/kobuki_ros/share/ament_index/resource_index/parent_prefix_path/kobuki_ros
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/environment/ament_prefix_path.sh
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/environment/ament_prefix_path.dsv
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/environment/path.sh
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/environment/path.dsv
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/local_setup.bash
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/local_setup.sh
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/local_setup.zsh
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/local_setup.dsv
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/package.dsv
+/home/a/soccer_ws/install/kobuki_ros/share/ament_index/resource_index/packages/kobuki_ros
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/cmake/kobuki_rosConfig.cmake
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/cmake/kobuki_rosConfig-version.cmake
+/home/a/soccer_ws/install/kobuki_ros/share/kobuki_ros/package.xml

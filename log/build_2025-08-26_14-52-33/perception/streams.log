@@ -1,0 +1,24 @@
+[1.220s] Invoking command in '/home/a/soccer_ws/src/perception': PYTHONPATH=/home/a/soccer_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/soccer_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/a/soccer_ws/build/perception/build install --record /home/a/soccer_ws/build/perception/install.log --single-version-externally-managed install_data
+[1.679s] running egg_info
+[1.681s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[1.681s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[1.681s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[1.681s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[1.681s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[1.684s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[1.685s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[1.686s] running build
+[1.687s] running build_py
+[1.687s] running install
+[1.687s] running install_lib
+[1.690s] running install_data
+[1.692s] creating /home/a/soccer_ws/install/perception/share/perception/launch
+[1.692s] copying launch/soccer_bot.launch.py -> /home/a/soccer_ws/install/perception/share/perception/launch
+[1.692s] running install_egg_info
+[1.694s] removing '/home/a/soccer_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info' (and everything under it)
+[1.694s] Copying ../../build/perception/perception.egg-info to /home/a/soccer_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info
+[1.697s] running install_scripts
+[1.743s] Installing ball_detector script to /home/a/soccer_ws/install/perception/lib/perception
+[1.743s] Installing ball_follower script to /home/a/soccer_ws/install/perception/lib/perception
+[1.747s] writing list of installed files to '/home/a/soccer_ws/build/perception/install.log'
+[1.804s] Invoked command in '/home/a/soccer_ws/src/perception' returned '0': PYTHONPATH=/home/a/soccer_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/a/soccer_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/a/soccer_ws/build/perception/build install --record /home/a/soccer_ws/build/perception/install.log --single-version-externally-managed install_data

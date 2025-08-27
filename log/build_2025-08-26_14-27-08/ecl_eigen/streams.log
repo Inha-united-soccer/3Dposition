@@ -1,0 +1,45 @@
+[0.074s] Invoking command in '/home/a/soccer_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_core/ecl_eigen -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_eigen
+[0.198s] -- The C compiler identification is GNU 11.4.0
+[0.307s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.469s] -- Detecting C compiler ABI info - done
+[0.481s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.482s] -- Detecting C compile features
+[0.483s] -- Detecting C compile features - done
+[0.488s] -- Detecting CXX compiler ABI info
+[0.635s] -- Detecting CXX compiler ABI info - done
+[0.654s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.655s] -- Detecting CXX compile features
+[0.656s] -- Detecting CXX compile features - done
+[0.668s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.004s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.505s] -- Configuring done
+[1.512s] -- Generating done
+[1.518s] -- Build files have been written to: /home/a/soccer_ws/build/ecl_eigen
+[1.529s] Invoked command in '/home/a/soccer_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake /home/a/soccer_ws/src/turtlebot2_ros2/ecl_core/ecl_eigen -DCMAKE_INSTALL_PREFIX=/home/a/soccer_ws/install/ecl_eigen
+[1.530s] Invoking command in '/home/a/soccer_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_eigen -- -j16 -l16
+[1.645s] Invoked command in '/home/a/soccer_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --build /home/a/soccer_ws/build/ecl_eigen -- -j16 -l16
+[1.672s] Invoking command in '/home/a/soccer_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_eigen
+[1.693s] -- Install configuration: ""
+[1.693s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/include/ecl/eigen.hpp
+[1.693s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ament_index/resource_index/package_run_dependencies/ecl_eigen
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ament_index/resource_index/parent_prefix_path/ecl_eigen
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/environment/ament_prefix_path.sh
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/environment/ament_prefix_path.dsv
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/environment/path.sh
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/environment/path.dsv
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/local_setup.bash
+[1.696s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/local_setup.sh
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/local_setup.zsh
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/local_setup.dsv
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/package.dsv
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ament_index/resource_index/packages/ecl_eigen
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenExport.cmake
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_targets-extras.cmake
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.697s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.698s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenConfig.cmake
+[1.698s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenConfig-version.cmake
+[1.698s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/ecl_eigen/package.xml
+[1.698s] -- Installing: /home/a/soccer_ws/install/ecl_eigen/share/licenses/eigen/COPYING.LESSER
+[1.701s] Invoked command in '/home/a/soccer_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/a/soccer_ws/install/perception:/opt/ros/humble /usr/bin/cmake --install /home/a/soccer_ws/build/ecl_eigen

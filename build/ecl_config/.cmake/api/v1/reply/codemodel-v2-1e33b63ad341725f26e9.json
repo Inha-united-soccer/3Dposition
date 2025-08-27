@@ -1,0 +1,276 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4cce5c02d1aa49e84a92.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						9
+					]
+				},
+				{
+					"build" : "include",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include-7ead17b99bffc88b66bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "include/ecl",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.ecl-034448e4a70f924f6612.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "include/ecl"
+				},
+				{
+					"build" : "include/ecl/config",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.ecl.config-ee87275feec7a31baaf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "include/ecl/config"
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/test",
+					"childIndexes" : 
+					[
+						6
+					],
+					"jsonFile" : "directory-src.test-3607701395add829ebf1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/test",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "src/utilities",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.utilities-f21332d21be05de38747.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/utilities",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7
+					],
+					"name" : "ecl_config",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ecl_config_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ecl_config_uninstall-a44f615fc877f0b440fa.json",
+					"name" : "ecl_config_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ecl_detect_endian::@f462118c54b1f42474f1",
+					"jsonFile" : "target-ecl_detect_endian-a053d2a12a6d42cbfc9a.json",
+					"name" : "ecl_detect_endian",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ecl_detect_posix::@f462118c54b1f42474f1",
+					"jsonFile" : "target-ecl_detect_posix-5133a0f66fbe0e7703f6.json",
+					"name" : "ecl_detect_posix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_test_char_sign::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_char_sign-00a240bc4e929106ff1f.json",
+					"name" : "ecl_test_char_sign",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_test_endianness::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_endianness-c8184ba82cae414d7014.json",
+					"name" : "ecl_test_endianness",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_test_macros::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_macros-6c3fe1b6cb945349376b.json",
+					"name" : "ecl_test_macros",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_test_portable_types::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_portable_types-b1b66ae7c91528f44628.json",
+					"name" : "ecl_test_portable_types",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-bf515a7b53da3e25a4ac.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-9f4d105f4f923b20be4d.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-74217d074f76dba08782.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/a/soccer_ws/build/ecl_config",
+		"source" : "/home/a/soccer_ws/src/turtlebot2_ros2/ecl_lite/ecl_config"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

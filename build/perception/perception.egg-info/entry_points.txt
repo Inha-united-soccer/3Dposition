@@ -1,0 +1,4 @@
+[console_scripts]
+ball_detector = perception.ball_detector_node:main
+ball_follower = perception.ball_follower_node:main
+
