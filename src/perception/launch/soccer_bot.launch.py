@@ -47,7 +47,7 @@ def generate_launch_description():
         name='ball_detector_node',
         parameters=[
             # setup.py에서 모델 경로를 지정했으므로 이 파라미터는 생략 가능
-            # {'yolo_model': 'yolov8n.pt'}, 
+            # {'yolo_model': 'yolov8n.pt'},
             {'confidence_threshold': 0.3}
         ]
     )
@@ -62,6 +62,5 @@ def generate_launch_description():
     # 실행할 노드 리스트에 camera_node 추가
     return LaunchDescription([
         camera_node,
-        ball_detector_node,
-        ball_follower_node
+        ball_detector_node
     ])

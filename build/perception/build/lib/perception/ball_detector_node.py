@@ -13,10 +13,11 @@ import message_filters  # 메세지 동기화
 class YOLODetector(Node):
     def __init__(self):
         super().__init__('yolo_detector_node')
-        self.model = YOLO('yolov8n.pt')
+        self.model = YOLO('best.pt')
         self.bridge = CvBridge()
         self.pub_dets = self.create_publisher(Detection2DArray, 'object_detection_2d', 10)
-        self.pos3d_pub = self.create_publisher(PointStamped, 'object_detection_3d', 10)
+        self.ball_pub = self.create_publisher(PointStamped, 'ball', 10)
+        self.human_pub = self.create_publisher(PointStamped, 'human', 10)
 
         
         # 카메라 내부 파라미터 (fx fy cx cy ) 저장 변수
@@ -65,7 +66,7 @@ class YOLODetector(Node):
                     cls_id = int(box.cls[0])  # YOLO 클래스 ID
                     label = self.model.names[cls_id]
 
-                    if label not in ["person", "sports ball"]:
+                    if label not in ["human", "ball"]:
                         continue
 
                     x1, y1, x2, y2 = map(int, box.xyxy[0])
@@ -76,7 +77,7 @@ class YOLODetector(Node):
                     color = (0, 255, 0) # 기본 초록색
                     score = float(box.conf)
                     
-                    if label == "person":
+                    if label == "human":
                         # 팀 판별 (HSV)
                         team = "Unknown"
                         person_region = cv_image[y1:y2, x1:x2]
@@ -108,17 +109,19 @@ class YOLODetector(Node):
                                 team = "Unknown"
                                 color = (255, 255, 255)
 
-                    elif label == "sports ball":
+                    elif label == "ball":
                         color = (0, 255, 255) # 공은 노란색으로 표시
                     
                     # 2D 탐지 메시지 생성
                     det_array.detections.append(
-                        self.create_detection_msg(rgb_msg.header, team, score, center_x, center_y, (x1, y1, x2, y2))
+                        self.create_detection_msg(rgb_msg.header, team, score, center_x, center_y)
                     )
-
+                    if label == "human":
                     # 3D 위치 계산 및 발행
-                    obj_x, obj_y, obj_z = self.publish_3d_position(depth_image, rgb_msg.header, center_x, center_y)
-
+                        obj_x, obj_y, obj_z = self.publish_human_position(depth_image, rgb_msg.header, center_x, center_y)
+                    elif label == "ball":
+                        obj_x, obj_y, obj_z = self.publish_ball_position(depth_image, rgb_msg.header, center_x, center_y)
+                        
                     # (시각화는 유지해도 되고 지워도 됨)
                     cv2.rectangle(cv_image, (x1, y1), (x2, y2), color, 2)
                     if obj_x is not None:
@@ -162,39 +165,14 @@ class YOLODetector(Node):
         det.bbox = bbox
         return det
         
-    def publish_3d_position(self, depth_image, header, cx, cy, box_coords):
-        # box_coords에서 바운딩 박스 좌표를 가져옴
-        x1, y1, x2, y2 = box_coords
-        
-        # 정수 좌표로 변환
+    def publish_ball_position(self, depth_image, header, cx, cy):
         cx, cy = int(cx), int(cy)
-        x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
-        
-        # 이미지 높이, 너비
-        h, w = depth_image.shape
         
         try:
-            # 1. 바운딩 박스 영역을 Depth 이미지에서 잘라냄 (ROI: Region of Interest)
-            #    좌표가 이미지 경계를 벗어나지 않도록 clamp
-            box_x1 = max(0, x1)
-            box_y1 = max(0, y1)
-            box_x2 = min(w, x2)
-            box_y2 = min(h, y2)
-            
-            depth_roi = depth_image[box_y1:box_y2, box_x1:box_x2]
-
-            # 2. 0이 아닌 유효한 깊이 값만 추출
-            valid_depths = depth_roi[depth_roi > 0]
-
-            # 3. 유효한 깊이 값이 없으면 계산 중단
-            if len(valid_depths) == 0:
-                self.get_logger().warn("바운딩 박스 내에서 유효한 깊이 값을 찾지 못했습니다.")
+            distance_mm = depth_image[cy, cx]
+            if distance_mm == 0: 
                 return None, None, None
 
-            # 4. 유효한 깊이 값들의 중간값(median)을 최종 거리로 사용
-            distance_mm = np.median(valid_depths)
-            
-            # --- 이하 3D 좌표 계산 및 발행 로직은 동일 ---
             distance_m = distance_mm / 1000.0
             
             fx = self.camera_intrinsics.k[0]
@@ -202,25 +180,57 @@ class YOLODetector(Node):
             cam_cx = self.camera_intrinsics.k[2]
             cam_cy = self.camera_intrinsics.k[5]
 
-            # 3D 좌표는 여전히 중심점(cx, cy)을 기준으로 계산
             obj_x = (cx - cam_cx) * distance_m / fx
             obj_y = (cy - cam_cy) * distance_m / fy
             obj_z = distance_m
             
             point_msg = PointStamped()
             point_msg.header = header
-            point_msg.header.frame_id = 'camera_depth_optical_frame'
+            point_msg.header.frame_id = 'camera_depth_optical_frame' # 좌표계 명시
+            
             point_msg.point.x = obj_x
             point_msg.point.y = obj_y
             point_msg.point.z = obj_z
-            self.pos3d_pub.publish(point_msg)
-                
+            self.ball_pub.publish(point_msg)
+             
             return obj_x, obj_y, obj_z
 
-        except Exception as e:
-            self.get_logger().error(f"publish_3d_position에서 에러 발생: {e}")
+        except IndexError:
             return None, None, None
+        
+    def publish_human_position(self, depth_image, header, cx, cy):
+        cx, cy = int(cx), int(cy)
+        
+        try:
+            distance_mm = depth_image[cy, cx]
+            if distance_mm == 0: 
+                return None, None, None
 
+            distance_m = distance_mm / 1000.0
+            
+            fx = self.camera_intrinsics.k[0]
+            fy = self.camera_intrinsics.k[4]
+            cam_cx = self.camera_intrinsics.k[2]
+            cam_cy = self.camera_intrinsics.k[5]
+
+            obj_x = (cx - cam_cx) * distance_m / fx
+            obj_y = (cy - cam_cy) * distance_m / fy
+            obj_z = distance_m
+            
+            point_msg = PointStamped()
+            point_msg.header = header
+            point_msg.header.frame_id = 'camera_depth_optical_frame' # 좌표계 명시
+            
+            point_msg.point.x = obj_x
+            point_msg.point.y = obj_y
+            point_msg.point.z = obj_z
+            self.human_pub.publish(point_msg)
+             
+            return obj_x, obj_y, obj_z
+
+        except IndexError:
+            return None, None, None
+        
 def main(args=None):
     rclpy.init(args=args)
     node = YOLODetector()
